@@ -1,58 +1,72 @@
-*{
+* {
     margin: 0%;
     padding: 0;
 }
 
-nav{
+nav {
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(130, 106, 251);
-
     height: 50px;
     padding: 20px;
 }
-a{
+
+a {
     color: aliceblue;
     margin: 0 10px;
     text-decoration: none;
 }
-.menu{
+
+.menu {
     display: none;
     cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
 }
-.nav-container{
-    display: none;
-    height: 200px;
+.menu:hover{
+    background-color: rgba(187, 182, 214, 0.685);
+}
+
+.nav-container {
     max-width: 100%;
-    background-color:  rgba(130, 106, 251, 0.685);
-    transition-property: display;
-    transition-duration: 4s;
+    
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    background-color: rgba(130, 106, 251, 0.685);
+    transition: height 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
- 
-.responsive-menu{
+
+.responsive-menu {
     display: flex;
     flex-direction: column;
-    padding: 20px 20px;
+    padding: 20px;
     justify-content: center;
     gap: 20px;
-    margin-bottom: 6rem;
-    transition: 1s ease-in-out;
-}
-
-
-@media screen and (max-width: 700px){
-    .right{
-        display: none;
-    }
-    .menu{
-        display: block;
-    }
     
+    background-color: rgba(148, 130, 241, 0.33);
 }
-@media screen and (min-width: 700px){
-    .nav-container{
+.link{
+    max-width: 100%;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 0;
+    border-radius: 6px;
+}
+.link:hover{
+    background-color: rgba(84, 58, 213, 0.33);
+}
+
+@media screen and (max-width: 700px) {
+    .right {
         display: none;
+    }
+    .menu {
+        display: flex;
     }
 }
