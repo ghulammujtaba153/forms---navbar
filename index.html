@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/index.css">
     
 </head>
 <body>
     <nav>
-        <div class="left">
-            <a href="">LOGO</a>
-        </div>
+        <div class="logo">
+            <img class="logo-icon" src="assets/daily-health-app.png" alt="/" />
+            <h3 class="logo-title">Medicare</h3>
+          </div>
         <div class="right">
-            <a href="">Home</a>
+            <a href="index.html">Home</a>
             <a href="">Contact us</a>
-            <a href="">About</a>
+            <a href="services.html">About</a>
             <a href="login-form.html">Login</a>
         </div>
         <div class="menu" onclick="toggleMenu()">
@@ -24,12 +25,165 @@
     </nav>
     <div class="nav-container" id="nav-container">
         <div class="responsive-menu">
-            <a class="link" href="">Home</a>
+            <a class="link" href="index.html">Home</a>
             <a  class="link" href="">Contact us</a>
-            <a  class="link" href="">About</a>
+            <a  class="link" href="services.html">About</a>
             <a  class="link" href="login-form.html">Login</a>
         </div>
     </div>
     <script src="index.js"></script>
+
+    <div class="main">
+        <div class="main-container">
+          <div class="image-container">
+            <img
+              class="main-img"
+              src="assets/team-young-specialist-doctors-standing-corridor-hospital.jpg"
+              alt="/"
+            />
+            <div class="image-overlay">
+              <div class="main-info">
+                <p class="info-title">the best medical center</p>
+                <h3 class="info-bold">Bringing health</h3>
+                <p class="info-sub">to life for the whole family.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="project">
+        <div class="project-container">
+          <h1>Doctor appointment System</h1>
+          <div class="actors">
+            <h3>Actors</h3>
+            <ul>
+              <li>Patient</li>
+              <li>Doctor</li>
+              <li>Admin</li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      
+  
+  
+  
+      <div class="welcome-container">
+        <div class="welcome-left">
+          <img
+            class="welcome-img"
+            src="assets/african-american-black-doctor-man-with-stethoscope-isolated-white-background.jpg"
+            alt=""
+          />
+        </div>
+        <div class="welcome-right">
+          <h2 class="welcome-title">Welcome To Modern Clinic.</h2>
+          <p>
+            Welcome to Modern Clinic, where cutting-edge healthcare meets
+            compassionate service. Our dedicated team of skilled medical
+            professionals is committed to providing you with the highest standard
+            of care. We offer a wide range of modern medical services,
+            personalized treatment plans, and a welcoming environment to ensure
+            your well-being. Your journey to better health begins here.
+          </p>
+          <div >
+              <div class="services"><span ><img class="icon" src="assets/check.png" alt="/"></span><p>Online Appointment</p> </div>
+              <div class="services"><span ><img class="icon" src="assets/check.png" alt="/"></span><p>Comprehensive Medical Examinations</p> </div>
+              <div class="services"><span ><img class="icon" src="assets/check.png" alt="/"></span><p>Primary Care Services</p> </div>
+              <div class="services"><span ><img class="icon" src="assets/check.png" alt="/"></span><p>Health Insurance Support and Coordination</p> </div>
+              <div class="services"><span ><img class="icon" src="assets/check.png" alt="/"></span><p>Specialized Treatment Plans</p> </div>
+              
+          </div>
+              
+          </ul>
+        </div>
+      </div>
+  
+      
+      <div class="department">
+          <div class="department-container">
+              <div class="upper-dep-section">
+                  <h1>Departments</h1>
+              </div>
+              <div class="lower-dep-section">
+                  <div class="card">
+                      <img class="card-img" src="assets/heart.png" alt="">
+                      <p>Cardialogy</p>
+                  </div>
+                  <div class="card">
+                      <img class="card-img" src="assets/lungs.png" alt="">
+                      <p>Cardialogy</p>
+                  </div>
+                  <div class="card">
+                      <img class="card-img" src="assets/tooth.png" alt="">
+                      <p>Cardialogy</p>
+                  </div>
+                  <div class="card">
+                      <img class="card-img" src="assets/ear.png" alt="">
+                      <p>Cardialogy</p>
+                  </div>
+                  <div class="card">
+                      <img class="card-img" src="assets/bone.png" alt="">
+                      <p>Cardialogy</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <div class="doctors">
+          <div class="doc-title">
+              <h1>Our Doctors</h1>
+          </div>
+          <div class="doc-cards-container">
+              <div class="doc-card">
+                  <img class="doc-img" src="assets/african-american-black-doctor-man-with-stethoscope-isolated-white-background.jpg" alt="">
+                  <h2>Doc Ahmed</h2>
+                  <p>Dentist</p>
+              </div>
+              <div class="doc-card">
+                  <img class="doc-img" src="assets/african-american-black-doctor-man-with-stethoscope-isolated-white-background.jpg" alt="">
+                  <h2>Doc Ahmed</h2>
+                  <p>Dentist</p>
+              </div>
+              <div class="doc-card">
+                  <img class="doc-img" src="assets/african-american-black-doctor-man-with-stethoscope-isolated-white-background.jpg" alt="">
+                  <h2>Doc Ahmed</h2>
+                  <p>Dentist</p>
+              </div>
+          </div>
+      </div>
+  
+  
+  
+      <div class="appointment">
+          <div class="appointment-container">
+              <h2>Book an Appointment</h2>
+              <form action="submit_appointment.php" method="post">
+                  <input type="text" name="name" placeholder="Name" required><br><br>
+      
+                  <input type="number" name="age" placeholder="Age" required><br><br>
+      
+                  <input type="date" name="date" placeholder="Date" required><br><br>
+      
+                  <input type="time" name="time" placeholder="Time" required><br><br>
+      
+                  <input type="text" name="doctorname" placeholder="Doctor's Name" required><br><br>
+      
+                  <input type="email" name="email" placeholder="Email" required><br><br>
+      
+                  <input type="tel" name="phone" placeholder="Phone" required><br><br>
+      
+                  <input type="submit" value="Submit">
+              </form>
+          </div>
+      </div>
+  
+      <footer>
+          <p>Ali Hamza(SP21-BSE-010)</p>
+          <p>Ghulam Mujtaba(SP21-BSE-030)</p>
+      </footer>
 </body>
 </html>
