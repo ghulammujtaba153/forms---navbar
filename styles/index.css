@@ -372,6 +372,16 @@ header{
     align-items: center;
     gap: 40px;
 }
+.discover-btn{
+    width: 150px;
+    padding: 10px;
+    background: gainsboro;
+    color: black;
+    outline: none;
+    border: .1 solid gainsboro;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
 
 @media (max-width: 767px) {
